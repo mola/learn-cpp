@@ -53,13 +53,9 @@ public:
 
                 return;
             }
-            else
-            {
-                cout << "Sorry , Your book was not found :) " << endl;
-
-                return;
-            }
         }
+
+        cout << "Sorry , Your book was not found :) " << endl;
     }
 
 private:
@@ -92,9 +88,9 @@ public:
     {
         cout << "Choose one of this options : " << endl;
 
-        cout << "1 . AddBook :  " << endl;
+        cout << "1 . AddBook   " << endl;
 
-        cout << "2 . SearchByName : " << endl;
+        cout << "2 . SearchByName  " << endl;
 
         cout << "3 . Exit  " << endl;
 
