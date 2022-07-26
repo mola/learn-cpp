@@ -15,9 +15,9 @@ int  main()
         cout << "1.Register user" << endl;
         cout << "2.Login user" << endl;
         cout << "3.Exit" << endl;
-        cin >> choise;
+        cin >> choice;
 
-        switch (choise)
+        switch (choice)
         {
         case 01:
         {
@@ -76,7 +76,7 @@ int  main()
             running = false;
             break;
         default:
-            cout << "Choise from menu. " << endl;
+            cout << "Choice from menu. " << endl;
             break;
         }
     }
