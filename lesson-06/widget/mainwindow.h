@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QElapsedTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui
@@ -10,9 +9,6 @@ namespace Ui
 class MainWindow;
 }
 QT_END_NAMESPACE
-
-class QTimer;
-class QPushButton;
 
 class MainWindow: public QMainWindow
 {
@@ -23,16 +19,18 @@ public:
 
     ~MainWindow();
 
-public slots:
-    void  changeName();
+private slots:
+    void  on_comboBox_currentIndexChanged(int index);
 
-    void  timeout();
+    void  on_comboAligment_currentIndexChanged(int index);
+
+    void  on_CreateWindow_clicked();
+
+    void  on_toolButton_clicked();
+
+    void  closeWindow();
 
 private:
     Ui::MainWindow *ui;
-    QPushButton    *mPushButton = nullptr;
-    int             mCounter    = 0;
-    QTimer         *mTimer      = nullptr;
-    QElapsedTimer   mETimer;
 };
 #endif // MAINWINDOW_H
