@@ -17,13 +17,6 @@ public:
         mB = b;
     }
 
-    int   sum() const;
-
-public slots:
-    void  dosum();
-
-signals:
-    // QThread interface
 
 protected:
     void  run();
