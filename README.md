@@ -9,4 +9,8 @@
 
 ## 4. Singleton
 
-## 5. start Q/c++ (Signal/slots, QTimer)
+## 5. Start Qt/c++ (Signal/slots, QTimer)
+
+## 6. Qt/Gui (QWidgets)
+
+## 7. Threading (std::thread, QThread, QMutex)
